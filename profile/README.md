@@ -36,7 +36,8 @@
 
 ## 시스템 아키텍쳐
 
-<img width="927" height="682" alt="image" src="https://github.com/user-attachments/assets/59d236c7-d878-4be8-a09c-d0af4387002f" />
+<img width="1426" height="1104" alt="image" src="https://github.com/user-attachments/assets/2bf25e0a-347b-42e0-a19f-0202dbd56b07" />
+
 
 
 ## 기술 구성
