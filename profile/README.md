@@ -34,19 +34,10 @@
 | [BackEnd](https://github.com/ganadiCare/BackEnd) | 인증·API·기록·리포트·장치 통신 | [실행 안내](https://github.com/ganadiCare/BackEnd#readme) |
 | [Sensor](https://github.com/ganadiCare/Sensor) | 라즈베리파이 카메라와 Wemos 펌웨어 | [장치 설정](https://github.com/ganadiCare/Sensor#readme) |
 
-## 연결 구조
+## 시스템 아키텍쳐
 
-```mermaid
-flowchart TB
-    User[사용자] --> Web[FrontEnd]
-    Web <-->|REST API · SSE| Server[BackEnd · Spring Boot]
-    Web <-->|WebRTC 영상| Pi[Raspberry Pi · 카메라 추적]
-    Pi <-->|WebSocket 시그널링 · 활동 기록| Server
-    Server <--> DB[(MySQL · Redis)]
-    Server <-->|설정 · 결과| Broker[MQTT Broker]
-    Broker <--> Wemos[Wemos D1 mini]
-    Wemos --> Devices[로드셀 · 급식 서보 · 급수 펌프]
-```
+<img width="927" height="682" alt="image" src="https://github.com/user-attachments/assets/59d236c7-d878-4be8-a09c-d0af4387002f" />
+
 
 ## 기술 구성
 
